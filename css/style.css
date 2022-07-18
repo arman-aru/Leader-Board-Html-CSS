@@ -1,0 +1,122 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+/* Body Css */
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    background-color: #f3f1ff;
+}
+/* Main Utilities */
+main{
+    display: flex;
+    justify-content: center;
+
+}
+.container{
+    background-color: #fff;
+    width: 870px;
+    padding: 30px;
+    margin-top: 30px;
+    border-radius: 5px;
+}
+/* top player section */
+.section-title{
+    color: #562eff;
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+.top-players{
+    margin-bottom: 30px;
+}
+.players{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-row-gap:30px;
+}
+.player{
+    display: flex;
+    align-items: center;
+
+}
+.player img{
+    width: 56px;
+    height: 56px;
+}
+.player-name{
+    margin-left: 16px;
+}
+hr{
+    border: 1px solid #D1D1D1;
+    margin-bottom: 30px;
+}
+
+/* -----Top blogs style------- */
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap:16px;
+}
+.blog{
+    display: flex;
+}
+.blog .thumbnail img{
+    width: 177px;
+    height:117px;
+}
+.blog-info{
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.blog-title{
+    font-style: 20px;
+}
+.blog-author{
+    color: #9f9f9f;
+    font-style: 16px;
+}
+.blog-author a{
+    text-decoration: none;
+    font-style: 16px;
+    color:#562EFF;
+}
+
+
+/* Media Queries */
+
+@media only screen and (max-width:688px) {
+    .container{
+        width: 100%;
+    }
+    .players{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap:30px;
+}
+.blogs{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap:16px;
+}
+.blog .thumbnail img{
+    width: 137px;
+    height:77px;
+}
+}
+
+@media only screen and (max-width:348px) {
+    .container{
+        width: 100%;
+    }
+    .players{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap:30px;
+}
+.blog .thumbnail img{
+    width: 117px;
+    height:57px;
+}
+}
